@@ -1,14 +1,13 @@
-import { LinkedList} from "./linkedlist.js"
+import { LinkedList } from "./linkedlist.js"
 
-const mylist = LinkedList();
-mylist.prepend("fish")
-mylist.append("cat");
-mylist.append("dog");
+// test from odin
+const list = new LinkedList();
 
-console.log(mylist.head())
-console.log(mylist.tail())
-console.log(mylist.size())
+list.append("dog");
+list.append("cat");
+list.append("parrot");
+list.append("hamster");
+list.append("snake");
+list.append("turtle");
 
-
-console.log(mylist.at(0))
-
+console.log(list.toString());
